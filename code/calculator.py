@@ -4,9 +4,12 @@ import pandas as pd
 
 class risk_return_calculator:
     @staticmethod
-    def calculate_assets_expectedreturns(returns):        
+    def calculate_assets_expectedreturns(returns):  
+        '''
+        expectedreturns: The expected return is the same as the historical mean return  
+        '''    
             return returns.mean() * 252
-
+ 
     @staticmethod
     def calculate_assets_covariance(returns):        
             return returns.cov() * 252

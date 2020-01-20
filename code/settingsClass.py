@@ -15,7 +15,11 @@ class settings:
     RiskFreeRate = 0
     CompanyFetchMode = "PreFixed" #Auto
     MyCompanies = ['ZM','UBER','SWI','RNG','CRWD', 'WORK', 'SYMC']
-    PortfolioOptimisationPath = 'C:\Temp\PortfolioOptimisation.xlsx'
+
+    wtt_local_data = '/Users/Tilt/local_data'
+
+    PortfolioOptimisationPath =   wtt_local_data + '/PortfolioOptimisation.xlsx' #'C:\Temp\PortfolioOptimisation.xlsx'
+    
     RiskFunction = risk_return_calculator.calculate_portfolio_risk
     ReturnFunction = risk_return_calculator.calculate_portfolio_expectedreturns
     AssetsExpectedReturnsFunction = risk_return_calculator.calculate_assets_expectedreturns

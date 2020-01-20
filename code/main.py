@@ -11,10 +11,12 @@ def generate_optimum_portfolio():
     mcs = obj_factory.get_portfolio_generator()
     fr = obj_factory.get_file_repository()
     mc = obj_factory.get_metrics_calculator()
-    price_extractor = obj_factory.get_price_extractor(companies)
+    price_extractor = obj_factory.get_price_extractor(settings.companies)
 
     print('1. Get companies')
-    companies = ce.get_companies_list()
+    #companies = ce.get_companies_list()
+    print('The Companies Data Frame')
+    print(ce.get_companies_list())
 
     print('2. Get company stock prices')
     
